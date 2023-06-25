@@ -1,7 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
-import ProductData from "./product";
+import langugageSlice from "./langugage-slice";
+import modalSlice from "./modal-slice";
+import cityClice from "./city";
 export const store = configureStore({
   reducer: {
-    prouductData: ProductData,
+    language: langugageSlice,
+    modal: modalSlice,
+    city: cityClice,
   },
 });
